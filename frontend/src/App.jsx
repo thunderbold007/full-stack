@@ -5,7 +5,16 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+(/api/auth,{
+  method:'POST',
+  headers:{
+    'Content-Type':'application/json'
+  },
+  body:JSON.stringify({
+    email:'',
+    password:''
+  })
+})
   return (
     <>
       <div>
